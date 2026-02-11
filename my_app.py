@@ -189,28 +189,28 @@ def main():
     st.title('Global Renewable Energy Dashboard')
 
     # Load forecast models for each country and renewable source
-    hydro_forecast_models = {'United States': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\us_hydro_best_uni_lstm.h5"),
-                             'Canada': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\can_hydro_best_uni_lstm.h5"),
-                             'Germany': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\ger_hydro_best_uni_lstm.h5"),
-                             'Brazil': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\brz_hydro_best_uni_lstm.h5"),
-                             "People's Republic of China": load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\chn_hydro_best_uni_lstm.h5"),
-                             'Australia': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Hydro\aus_hydro_best_uni_lstm.h5"),
+    hydro_forecast_models = {'United States': load_model(r".\forecast_models\Hydro\us_hydro_best_uni_lstm.h5"),
+                             'Canada': load_model(r".\forecast_models\Hydro\can_hydro_best_uni_lstm.h5"),
+                             'Germany': load_model(r".\forecast_models\Hydro\ger_hydro_best_uni_lstm.h5"),
+                             'Brazil': load_model(r".\forecast_models\Hydro\brz_hydro_best_uni_lstm.h5"),
+                             "People's Republic of China": load_model(r".\forecast_models\Hydro\chn_hydro_best_uni_lstm.h5"),
+                             'Australia': load_model(r".\forecast_models\Hydro\aus_hydro_best_uni_lstm.h5"),
                              }
 
-    wind_forecast_models = {'United States': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\us_wind_best_gru.h5"),
-                            'Canada': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\can_wind_best_gru.h5"),
-                            'Germany': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\ger_wind_best_gru.h5"),
-                            'Brazil': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\brz_wind_best_gru.h5"),
-                            "People's Republic of China": load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\chn_wind_best_gru.h5"),
-                            'Australia': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Wind\aus_wind_best_gru.h5"),
+    wind_forecast_models = {'United States': load_model(r".\forecast_models\Wind\us_wind_best_gru.h5"),
+                            'Canada': load_model(r".\forecast_models\Wind\can_wind_best_gru.h5"),
+                            'Germany': load_model(r".\forecast_models\Wind\ger_wind_best_gru.h5"),
+                            'Brazil': load_model(r".\forecast_models\Wind\brz_wind_best_gru.h5"),
+                            "People's Republic of China": load_model(r".\forecast_models\Wind\chn_wind_best_gru.h5"),
+                            'Australia': load_model(r".\forecast_models\Wind\aus_wind_best_gru.h5"),
                             }
 
-    solar_forecast_models = {'United States': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\us_solar_best_gru.h5"),
-                             'Canada': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\can_solar_best_gru.h5"),
-                             'Germany': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\ger_solar_best_gru.h5"),
-                             'Brazil': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\brz_solar_best_gru.h5"),
-                             "People's Republic of China": load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\chn_solar_best_gru.h5"),
-                             'Australia': load_model(r"C:\Users\Acer\Downloads\example-app-time-series-annotation-main\example-app-time-series-annotation-main\forecast models\Solar\aus_solar_best_gru.h5"),
+    solar_forecast_models = {'United States': load_model(r".\forecast_models\Solar\us_solar_best_gru.h5"),
+                             'Canada': load_model(r".\forecast_models\Solar\can_solar_best_gru.h5"),
+                             'Germany': load_model(r".\forecast_models\Solar\ger_solar_best_gru.h5"),
+                             'Brazil': load_model(r".\forecast_models\Solar\brz_solar_best_gru.h5"),
+                             "People's Republic of China": load_model(r".\forecast_models\Solar\chn_solar_best_gru.h5"),
+                             'Australia': load_model(r".\forecast_models\Solar\aus_solar_best_gru.h5"),
                              }
 
     # Load data
