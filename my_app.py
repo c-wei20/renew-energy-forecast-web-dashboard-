@@ -190,7 +190,7 @@ def main():
     st.title('Global Renewable Energy Dashboard')
 
     # Load forecast models for each country and renewable source
-    hydro_forecast_models = {'United States': load_model(r".\forecast_models\Hydro\us_hydro_best_uni_lstm.h5"),
+    hydro_forecast_models = {'United States': load_model('./forecast_models/Hydro/us_hydro_best_uni_lstm.h5'),
                              'Canada': load_model(r"./forecast_models/Hydro/can_hydro_best_uni_lstm.h5"),
                              'Germany': load_model(r"./forecast_models/Hydro/ger_hydro_best_uni_lstm.h5"),
                              'Brazil': load_model(r"./forecast_models/Hydro/brz_hydro_best_uni_lstm.h5"),
