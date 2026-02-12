@@ -119,7 +119,7 @@ def sidebar_filters(data, eva_matrix_df):
         'Select Year Range', min_value=min_year, max_value=max_year, value=(min_year, max_year)
     )
 
-    plot_frequency = st.sidebar.radio("Select Granularity", ["Daily", "Monthly", "Yearly"])
+    plot_frequency = st.sidebar.radio("Select Granularity", ["Daily", "Monthly", "Yearly"], index=1)
 
     filtered_data = data[(data['Country'].isin(selected_country)) &
                          (data['Energy Source'] == selected_source) &
